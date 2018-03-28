@@ -1,0 +1,25 @@
+<view class="container text-center">
+  <image class="logo" src="/image/login.png"></image>
+  <view class="login-title ">
+    <button data-num="1" class="login-btn {{_num==1?'activ':''}}" bindtap="passwordBtn">短信登录</button>
+    <button data-num="2" class="login-btn {{_num==2?'activ':''}}" bindtap="passwordBtn">密码登录</button>
+  </view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <input type="tel" placeholder="{{phonepla}}" maxlength="11" bindchange="phone"/>
+      <button bindtap="downtime" wx:if="{{_num==1}}">{{time}}</button>
+    </view>
+    <view class="section">
+      <switch name="switch" wx:if="{{_num==2}}" class="block" bindtap="pasortext"/>
+      <input type="{{!inputType&&_num==2?'password':'text'}}" placeholder="{{passwordpla}}" maxlength="6" bindchange="validate"/>
+    </view>
+    <view class="login-text" wx:if="{{_num==1}}">
+      温馨提示：未注册饿了么帐号的手机号，登录时将自动注册，且代表您已同意
+      <navigator>《用户服务协议》</navigator>
+    </view>
+    <view class="btn-area">
+      <button formType="submit" bindtap="login">登陆</button>
+      <navigator>关于我们</navigator>
+    </view>
+  </form>
+</view>

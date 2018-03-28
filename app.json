@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/list/list",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "#333",
+    "navigationBarBackgroundColor": "#0085ff",
+    "navigationBarTitleText": "饿了么",
+    "navigationBarTextStyle": "#333"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#1296db",
+    "borderStyle": "#000",
+    "list": [
+      {
+        "selectedIconPath": "/image/billcut.png",
+        "iconPath": "/image/bill.png",
+        "pagePath": "pages/index/index",
+        "text": "外卖"
+      },
+      {
+        "selectedIconPath": "/image/eyecut.png",
+        "iconPath": "/image/eye.png",
+        "pagePath": "pages/logs/logs",
+        "text": "发现"
+      },
+      {
+        "selectedIconPath": "/image/vehiclecut.png",
+        "iconPath": "/image/vehicle.png",
+        "pagePath": "pages/index/index",
+        "text": "订单"
+      },
+      {
+        "selectedIconPath": "/image/usercut.png",
+        "iconPath": "/image/user.png",
+        "pagePath": "pages/list/list",
+        "text": "我的"
+      }
+    ]
+  }
+}

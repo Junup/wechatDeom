@@ -1,0 +1,30 @@
+<!--logs.wxml-->
+<swiper>  
+  <block>  
+    <swiper-item>  
+        <navigator hover-class="navigator-hover">  
+        <image src="http://preview.quanjing.com/chineseview113/431-2600.jpg" class="slide-image" width="355" height="150"/>  
+        </navigator>   
+    </swiper-item>  
+  </block>  
+   <block>  
+    <swiper-item>  
+        <navigator hover-class="navigator-hover">  
+        <image src="http://preview.quanjing.com/chineseview113/431-2600.jpg" class="slide-image" width="355" height="150"/>  
+        </navigator>   
+    </swiper-item>  
+  </block>  
+   <block>  
+    <swiper-item>  
+        <navigator hover-class="navigator-hover">  
+        <image src="http://preview.quanjing.com/chineseview113/431-2600.jpg" class="slide-image" width="355" height="150"/>  
+        </navigator>   
+    </swiper-item>  
+  </block>  
+</swiper>  
+
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>

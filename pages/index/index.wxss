@@ -1,0 +1,48 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.user-list .text-red{
+  color: red;
+}
+
+.user-list{
+  font-size: 32rpx;
+  line-height: 50rpx;
+  border-top: 1px solid #ddd;
+  padding: 30rpx;
+  overflow: hidden;
+  width: 700rpx
+}
+
+.user-list image{
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 30rpx;
+  float: left;
+}
+
+.user-list view{
+  color: #666;
+  font-size: 28rpx;
+}
+
+.user-list .user-title{
+  display: block;
+  color: #333;
+  font-size: 32rpx;
+}

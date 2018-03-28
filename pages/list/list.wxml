@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="user-head">
+    <image class="user-img" src="http://preview.quanjing.com/chineseview113/431-2600.jpg"></image>
+    <view class="user-link"> 
+      <navigator url="../login/login" hover-class="none">
+      <view class="user-wrap">
+        <text class="login-reg">登录/注册</text>
+        <text class="user-text">登录后享受更多特权</text>  
+      </view>
+      <image class="arr-right" src="/image/arrow.png"></image>
+      </navigator>
+    </view>
+  </view>
+  <view class="user-content">
+     <navigator class="link-two" url="index/index">
+      <image src="/image/icon.png"></image>
+      优惠
+      </navigator>
+       <navigator class="link-two" url="index/index">
+      <image src="/image/icon.png"></image>
+      金币
+      </navigator>
+  </view>
+    <view class="link-list">
+      <navigator class="link-lsit" url="index/index">
+      <image src="/image/icon.png" class="list-icon"></image>
+      我的地址
+      <image src="/image/arrow-list.png" class="right-icon"></image>
+      </navigator>
+     </view>
+    <view class="link-list">
+      <navigator class="link-lsit item-link" url="index/index">
+      <image src="/image/icon.png" class="list-icon"></image>
+      金币商城
+      <image src="/image/arrow-list.png" class="right-icon"></image>
+      </navigator>
+      <navigator class="link-lsit item-link" url="index/index">
+      <image src="/image/icon.png" class="list-icon"></image>
+      分享拿5元现金
+      <image src="/image/arrow-list.png" class="right-icon"></image>
+      </navigator>
+    </view>
+    <view class="link-list">
+      <navigator class="link-lsit item-link" url="index/index">
+      <image src="/image/icon.png" class="list-icon"></image>
+      我的客服
+      <image src="/image/arrow-list.png" class="right-icon"></image>
+      </navigator>
+      <navigator class="link-lsit item-link" url="index/index">
+      <image src="/image/icon.png" class="list-icon"></image>
+      下载饿了么APP
+      <image src="/image/arrow-list.png" class="right-icon"></image>
+      </navigator>
+    </view>
+    <text>{{name}}</text>
+  </view>
